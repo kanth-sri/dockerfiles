@@ -3,7 +3,7 @@ LABEL author="srikanth" \
       company="devops_sol"
 EXPOSE 80
 RUN dnf install nginx -y 
-CMD ["nginx" "-g" "daemon off"]
+CMD ["nginx" ,"-g" ,"daemon off;"]
 RUN rm -rf /usr/share/nginx/html/* 
 COPY index.html /usr/share/nginx/html/index.html
 RUN mkdir /tmp/add
