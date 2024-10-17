@@ -1,3 +1,3 @@
 FROM almalinux
-RUN sudo dnf install nginx
+RUN  dnf install nginx -y
 CMD ["nginx", "-g", "daemon off;"]
